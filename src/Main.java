@@ -45,6 +45,7 @@ public class Main {
 
 
 // program to find greater no from 3 no;
+/*
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -65,5 +66,35 @@ public class Main {
         }
     }
 }
+*/
 
+// program to find multiplication table
+/*
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int a =sc.nextInt();
+        for (int i=1; i<=10; i++){
+            System.out.println(a+ "x" +i+ "="+ a*i);
+        }
+    }
+}
+*/
+
+
+//program to reverse string
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your name: " );
+        String name=sc.nextLine();
+
+        String rev="";
+        for(int i = name.length()-1; i>=0; i--)
+            rev = rev + name.charAt(i);
+
+        System.out.println(rev);
+
+    }
+}
 
