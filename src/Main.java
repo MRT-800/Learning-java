@@ -83,6 +83,7 @@ public class Main{
 
 
 //program to reverse string
+/*
 public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -97,4 +98,22 @@ public class Main {
 
     }
 }
+*/
+
+//reverse a string another method
+
+/*
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String name=sc.nextLine();
+        String rev=new StringBuilder(name).reverse().toString();
+        System.out.println(rev);
+    }
+}
+*/
+
+
+
+
 
