@@ -113,7 +113,19 @@ public class Main {
 }
 */
 
-
+//Factorial of a number
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Enter a number for factorial:");
+        Scanner inp = new Scanner(System.in);
+        int a = inp.nextInt();
+        int fact =1;
+        for (int i = 1; i <= a; i++) {
+             fact = fact * i;
+        }
+        System.out.println("Factorial is :"+fact);
+    }
+}
 
 
 
