@@ -159,6 +159,7 @@ public class Main {
 */
 
 //reverse of a no. and palindrom
+/*
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -175,6 +176,51 @@ public class Main {
         }
         else{
             System.out.println("Not Palindrome");
+        }
+    }
+}
+*/
+
+
+//count the digit of no.
+/*
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        int digit=0;
+        while(a!=0){
+            a=a/10;
+            digit++;
+        }
+        System.out.println(digit);
+    }
+}
+*/
+
+//learning how machine work
+//print each digit
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int temp = n;
+        int divisor = 1;
+
+
+        while (temp >= 10) {
+            temp = temp / 10;
+            divisor = divisor * 10;
+        }
+
+
+        while (divisor != 0) {
+            int digit = n / divisor;
+            System.out.println(digit);
+            n = n % divisor;
+            divisor = divisor / 10;
         }
     }
 }
