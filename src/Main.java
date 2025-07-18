@@ -234,8 +234,10 @@ public class Main {
     public static void main(String[] args) {
         // Create and initialize the array
         int[] numbers = {10, 20, 30, 40, 50};
-
-        // Print the array elements
+        System.out.println(numbers[1]);
+        System.out.println(numbers[2]);
+        System.out.println(".....................");
+        // Print all the array elements
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
