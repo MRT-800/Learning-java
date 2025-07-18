@@ -198,9 +198,9 @@ public class Main {
 }
 */
 
-//learning how machine work
-//print each digit
 
+//print each digit
+/*
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -223,4 +223,24 @@ public class Main {
             divisor = divisor / 10;
         }
     }
+}*/
+
+
+//array
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Create and initialize the array
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        // Print the array elements
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+    }
 }
+
+
+
