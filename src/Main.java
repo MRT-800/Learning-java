@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 /*public class Main {
     public static void main(String[] args) {
@@ -246,6 +247,7 @@ public class Main {
 
 */
 
+/*
 import java.util.Arrays;
 
 public class Main {
@@ -262,6 +264,36 @@ public class Main {
         System.out.println("You entered: " + Arrays.toString(numbers));
     }
 }
+*/
 
 
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+        int[] numbers = new int[5];
+
+
+        System.out.println("Enter 5 numbers:");
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = sc.nextInt();
+        }
+
+
+        System.out.println("You entered:"+ Arrays.toString(numbers));
+
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        System.out.println("\nSum of the elements: " + sum);
+
+        //sum - last element
+        int Diff =sum-numbers[numbers.length-1];
+        System.out.println("\nSum of the elements: " + Diff);
+
+
+    }
+}
