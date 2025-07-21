@@ -267,7 +267,7 @@ public class Main {
 */
 
 
-
+/*
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -295,5 +295,38 @@ public class Main {
         System.out.println("\nSum of the elements: " + Diff);
 
 
+    }
+}*/
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int[] numbers = new int[5];
+        int sum = 0;
+        int max = Integer.MIN_VALUE;
+
+        System.out.println("Enter 5 numbers:");
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print("Number " + (i + 1) + ": ");
+            numbers[i] = scanner.nextInt();
+            sum += numbers[i];
+
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+        }
+
+        double average = (double) sum / numbers.length;
+
+        System.out.println("\nResults:");
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+        System.out.println("Highest Number: " + max);
+
+        scanner.close();
     }
 }
